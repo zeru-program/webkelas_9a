@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>9A Profile</title>
+</head>
+<body>
+  <nav>
+    <ul class="uL">
+      <li>
+        <a href="/home">
+          <label class="textNav">Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="active">
+          <label class="textNav">Organisasi kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="/struktur">
+          <label class="textNav">Struktur kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="/poto">
+          <label class="textNav">Foto random</label>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <p class="judul">Organisasi class <br />9A</p>
+  <table class="tabdalem" cellpadding="5" border="0">
+    <tr>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">Ketua kelas <br> Nesya</p>
+      </td>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">Wakil Ketua <br> Justine</p>
+      </td>
+    </tr>
+    </table>
+  <table class="tabdalem" cellpadding="5" border="0">
+    <tr>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+      <td>
+        <img class="img" src="unknown.jpg" alt="" />
+        <p class="textnama">unknown</p>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript" charset="utf-8">
+  const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    navLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+  </script>
+</body>
+</html>
