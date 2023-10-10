@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&family=Kanit&family=Tilt+Prism&display=swap");
+
+/* toper */
+body {
+  background: rgb(245,142,92);
+background: linear-gradient(90deg, rgba(245,142,92,1) 0%, rgba(255,209,21,1) 43%, rgba(254,255,110,1) 100%);
+  background-size: 300%;
+  animation: bg 25s infinite alternate;
+  font-family: "Kanit", Sans-Serif;
+}
+@keyframes bg {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background: #ffffff82;
+  border-radius: 10px;
+  box-shadow: 0 0 2px whitesmoke;
+}
+nav a.active{
+  border-bottom: 3px solid #2a2a2a;
+  transition: 0.4s;
+}
+nav a:active{
+  border-bottom: 3px solid #2a2a2a;
+  transition: 0.4s;
+}
+a {
+  text-decoration: none;
+}
+.uL {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.textNav {
+  transition: 0.1s;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.judul{
+  color: #ff4343;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Bebas Neue', Sans-Serif;
+  animation: Brder 1s alternate infinite ;
+}
+.judulangota{
+  color: #6a86ff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-family: 'Bebas Neue', Sans-Serif;
+}
+@keyframes Brder{
+  from{
+  border-bottom: 3px solid black;
+  }
+  to{
+  border-bottom: 3px solid white;
+  }
+}
+.table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabdalem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textnama{
+  text-align: center;
+  background: white;
+  position: relative;
+  padding: 25px 15px;
+  border-radius: 5px;
+  top: -26px;
+  font-size: 2em;
+}
+.img{
+  width: 100px;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 568px){
+  nav {
+    font-size: 1em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 1em;
+  }
+  .textNav {
+    font-size: .8em;
+    padding: 0;
+  }
+  .judul{
+    font-size: 3em;
+  }
+  .textnama{
+    font-size: .75em;
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>9A Profile</title>
+</head>
+<body>
+  <nav>
+    <ul class="uL">
+      <li>
+        <a href="/home">
+          <label class="textNav">Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="/ok">
+          <label class="textNav">Organisasi kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="/struktur" class="active">
+          <label class="textNav">Struktur kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="/poto">
+          <label class="textNav">Foto random</label>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <p class="judul">Struktur <br />9A</p>
+  <table class="tabdalem" cellpadding="5" border="0">
+    <tr>
+      <td>
+        <p class="textnama">Wali kelas <br><font color="red"> Ida Karlina </font></p>
+      </td>
+    </table>
+    <table class="tabdalem" cellpadding="5" border="0">
+      <td>
+        <p class="textnama">Ketua kelas <br><font color="red"> Nesya </font></p>
+      </td>
+      <td>
+        <p class="textnama">Wakil Ketua <br><font color="red"> Justine</font></p>
+      </td>
+    </tr>
+    </table>
+      <p class="judulangota">Anggota kelas</p>
+  <table class="tabdalem" cellpadding="5" border="0">
+    <tr>
+      <td>
+        <p class="textnama">Ahmad Lutfi</p>
+      </td>
+      <td>
+        <p class="textnama">Aprilia</p>
+      </td>
+      <td>
+        <p class="textnama">Arini oktavia</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">Bagas dwi ramadhan</p>
+      </td>
+      <td>
+        <p class="textnama">Bilqis siti kirani</p>
+      </td>
+      <td>
+        <p class="textnama">Felin naditya</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="textnama">Harun ferdinan</p>
+      </td>
+      <td>
+        <p class="textnama">Januar girly</p>
+      </td>
+      <td>
+        <p class="textnama">Justine</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">Kadek kamajaya</p>
+      </td>
+      <td>
+        <p class="textnama">Kalista lakdiyanti</p>
+      </td>
+      <td>
+        <p class="textnama">Kalya tri</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="textnama">Keyla maulidiya</p>
+      </td>
+      <td>
+        <p class="textnama">Keysa auni</p>
+      </td>
+      <td>
+        <p class="textnama">Kharisa nur Aisah</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">Gisela</p>
+      </td>
+      <td>
+        <p class="textnama">MarsyaMarsya zafa</p>
+      </td>
+      <td>
+        <p class="textnama">M azwar hanafi</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">M Reihan</p>
+      </td>
+      <td>
+        <p class="textnama">M akbar laher</p>
+      </td>
+      <td>
+        <p class="textnama">M facri syahbanii</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">M gilang rizki</p>
+      </td>
+      <td>
+        <p class="textnama">M Ihsan zulfiawan</p>
+      </td>
+      <td>
+        <p class="textnama">M razka</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">M roghibul</p>
+      </td>
+      <td>
+        <p class="textnama">Nadine quenna</p>
+      </td>
+      <td>
+        <p class="textnama">Nakisha</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">Nesya syafira</p>
+      </td>
+      <td>
+        <p class="textnama">Nur aida</p>
+      </td>
+      <td>
+        <p class="textnama">Nur cahya</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <p class="textnama">Rahmad mukti</p>
+      </td>
+      <td>
+        <p class="textnama">Ramadhan Guntur</p>
+      </td>
+      <td>
+        <p class="textnama">Rossi adam</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="textnama">Siti khorunisa</p>
+      </td>
+    </tr>
+      <td>
+        <p class="textnama">Yudha novyardi</p>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript" charset="utf-8">
+  const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    navLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+  </script>
+</body>
+</html>
